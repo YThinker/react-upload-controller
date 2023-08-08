@@ -1,0 +1,92 @@
+@prefix: gd-upload;
+
+.@{prefix}-input {
+  width: 0;
+  height: 0;
+  content: '';
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.@{prefix}-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.@{prefix}-button-file-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.@{prefix}-button-file-list-item {
+  display: flex;
+  align-items: center;
+  height: 18px;
+  overflow: hidden;
+  margin-top: 10px;
+  opacity: 1;
+
+  &-enter {
+    height: 0;
+    margin-top: 0;
+    opacity: 0;
+  }
+
+  &-enter-active {
+    height: 18px;
+    opacity: 1;
+    margin-top: 10px;
+    transition: all 0.2s;
+  }
+
+  &-exit {
+    height: 18px;
+    margin-top: 10px;
+    opacity: 1;
+  }
+
+  &-exit-active {
+    height: 0;
+    margin-top: 0;
+    opacity: 0;
+    transition: all 200ms;
+  }
+}
+
+.@{prefix}-button-file-list-loading,
+.@{prefix}-button-file-list-percent {
+  color: #2D7AF7;
+}
+.@{prefix}-button-file-list-loading {
+  margin-left: 8px;
+}
+.@{prefix}-button-file-list-percent {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2d7af7;
+  line-height: 1;
+}
+
+.@{prefix}-button-file-list-name {
+  font-size: 12px;
+  font-weight: 400;
+  color: #08101e8c;
+  line-height: 18px;
+
+  &-fail {
+    color: #FF5269;
+  }
+}
+
+.@{prefix}-button-file-list-delete {
+  margin-left: 8px;
+  font-size: 16px;
+  color: #999;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #ff566c;
+  }
+}
